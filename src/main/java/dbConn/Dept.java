@@ -10,6 +10,7 @@ import lombok.Data;
 //@NoArgsConstructor
 //@Setter
 //@Getter // getter들을 생성
+@AllArgsConstructor
 @Data
 public class Dept {
 
