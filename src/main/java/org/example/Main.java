@@ -11,8 +11,13 @@ public class Main {
         lombok1.setNum(1);
         System.out.println(lombok1.getNum());
 
-        HelloLombok lombok2 = new HelloLombok("123-45");
-        HelloLombok lombok3 = new HelloLombok(3, "김연지", "123-46");
+        HelloLombok lombok2 = new HelloLombok(3, "김연지", "123-45");
+        HelloLombok lombok3 = new HelloLombok(3, "김연지", "123-45");
         System.out.println(lombok3.toString()); // __repr__
+        System.out.println(lombok2.equals(lombok3)); // 각 속성의 값을 따로따로 비교 true
+        System.out.println(lombok2.hashCode()); // 값이 일치하는지를 hashCode()로 변환
+        System.out.println(lombok3.hashCode()); // 값이 일치하는지를 hashCode()로 변환
+        // hashcode() HashMap 자료구조를 위해 각 메모리주소를 hash알고리즘으로 바꿔서 일치하는지 확인하는 메서드
+
     }
 }
